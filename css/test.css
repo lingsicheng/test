@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 1440px;
+    height: 1666px;
+    background-color: blue;
+}
+.head {
+	width: 1440px;
+	height: 100px;
+    background-color: #ffffff;
+	position: absolute;
+}
+.logo {
+	width: 105px;
+	height: 30px;
+	background-color: #f92525;
+	top: 25px;
+	left: 105px;
+	position: absolute;
+	font-family: MyriadPro-Regular;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+}
+.logout {
+	width: 105px;
+	height: 30px;
+	background-color: #f92525;
+	top: 30px;
+	right: 150px;
+	position: absolute;
+	font-family: MyriadPro-Regular;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+}
+
+/* .base {
+	width: 560px;
+    height: 288px;
+    top: 170px;
+    left: 150px;
+    position: absolute;
+    background-color: brown;
+} */
+
+li {
+	list-style:none;
+}
+.slide_wp {
+	width: 560px;
+    height: 288px;
+	margin:170px 150px;
+	border:2px solid #e31414;
+	position: absolute;;
+	text-align:center;
+    overflow:hidden;
+}
+img {
+	width:560px;
+	height:288px;
+}
+ul.img_wp a {
+	display:block;
+}
+ul.img_wp li {
+	float:left;
+}
+ul.img_wp {
+    width:10000px;
+    
+}
+ol {
+	display:inline-block;
+	position:relative;
+	bottom:45px;
+
+	padding:0px 3px 5px;
+	border-radius:15px;
+}
+ol li {
+	display:inline-block;
+	width:5px;
+	height:5px;
+	background-color:#ccc;
+	border-radius:50%;
+	margin:0 4px;
+	vertical-align:middle;
+}
+ol li.on {
+	width:5px;
+	height:5px;
+	background-color:#ffffff;
+}
+button.handle_btn {
+	position:absolute;
+	width:40px;
+	height:30px;
+	top:50%;
+}
+button.handle_btn.right_btn {
+	right:5px;
+}
+button.handle_btn.left_btn {
+	left:5px;
+}

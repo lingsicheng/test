@@ -1,0 +1,65 @@
+<!-- 技能要求：
+  掌握网页的DIV+CSS布局方式（不需要兼容老版本浏览器，保证Google浏览器正常即可）
+  遵循 前端编码规范 ，能够使用Jquery和原生的JS进行简单页面操作
+  使用 PxCook 看psd文件的颜色和尺寸
+  针对源代码能够清楚具体作用，会使用开发工具（推荐 VS Code 配置 进阶 ) 和使用Chrome开发者工具 进行调试
+
+测试要求：将测试图片（ 图片在页面底部或者文件夹里面）做出html页面，图片和文字内容可以随意（练习图片用占位图 ），重点是html、css、js
+  要求1：将css和js独立成外部文件，文件名称应使用有意义名称统一用小写英文字母、数字和下划线的组合,页面必须按示例图片进行布局，html条理结构清晰
+  要求2：导航条鼠标划过有滑块效果，点击后滑块固定在当前点击的条目上
+  要求3：运用js制作轮播图，轮播图需自动播放，鼠标放上去会停止自动播放，点击左右按钮和下方小点会进行对应图片滑动。(为检验js水平，轮播图除可以使用jq外，不能使用其他轮播插件，需自己制作编写代码)
+  要求4：运用echarts进行数据可视化图表展示，数据向指定接口异步获取并进行图表渲染
+      附：echarts图表数据接口请求地址：https://edu.telking.com/api/ (外网地址) https://edu.oa.com/api/ (内网测试服地址)
+      接口参数使用说明：必须参数：type, 月数据：type=month， 周数据：type=week 示例: https://edu.telking.com/api/?type=month
+      echarts图表样式不是重点 先把整个页面做出来 从接口成功把数据渲染出来先 最后再来看怎样调图表的样式跟整个页面的风格更搭一点
+  要求5：用git操作上传到github，将github网址发过来进行代码检查（ 上传方法   Git教程 ) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>前端测试题</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="js/test.js"></script>
+
+   
+</head>
+<body onload="move()">
+    <div class="head">
+      <div class="logo">
+        L O G O  
+      </div>
+      <input type="button" value="Log Out" class="logout">
+      </div>
+        <!-- 轮播图 -->
+        <div class="slide_wp">
+          <ul class="img_wp">
+              <li>
+                  <a href="javascript:;"><img src="http://www.jq22.com/img/cs/500x300-1.png" alt=""></a>
+              </li>
+              <li>
+                  <a href="javascript:;"><img src="http://www.jq22.com/img/cs/500x300-2.png" alt=""></a>
+              </li>
+              <li>
+                  <a href="javascript:;"><img src="http://www.jq22.com/img/cs/500x300-3.png" alt=""></a>
+              </li>
+              <li>
+                  <a href="javascript:;"><img src="http://www.jq22.com/img/cs/500x300-4.png" alt=""></a>
+              </li>
+              <li>
+                  <a href="javascript:;"><img src="http://www.jq22.com/img/cs/500x300-5.png" alt=""></a>
+              </li>
+          </ul>
+          <ol>
+              
+          </ol>
+          <button class="handle_btn left_btn">&lt;</button>
+          <button class="handle_btn right_btn">&gt;</button>
+      </div>
+
+</body>
+</html>
